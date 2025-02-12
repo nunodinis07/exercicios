@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Idade {
+   public static void main(String[] args) {
+       //Cria um objeto Scanner para ler a entrada do user
+       Scanner scanner = new Scanner(System.in);
+
+
+       //Pede ao user para inserir a idade
+       System.out.print("Por favor insira a sua idade \n");
+       int idade = scanner.nextInt();
+
+
+       //Verifica a idade e exibe uma mensagem personalizada
+       if (idade >= 18) {
+           System.out.println(idade + " anos! És maior de idade");
+       } else {
+           System.out.println(idade + " anos! És menor de idade");
+       }
+       // fecha o scanner..
+       scanner.close();
+   }
+}
